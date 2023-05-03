@@ -1,3 +1,4 @@
+// no error handling and no caching of the jQuery objects
 // $(function() {
 //   $("#add").on("click", function() {
 //     var val = $("input").val();
@@ -12,12 +13,12 @@
 //     }
 //   });
 // });
+// $("#item").click(function() {
+//   $("#submenu").slideToggle(500);
+// }); 
 
-$("#item").click(function() {
-  $("#submenu").slideToggle(500);
-}); 
 
-
+//more robust code
 $(function() {
   var $input = $("input");
   var $mylist = $("#mylist");
